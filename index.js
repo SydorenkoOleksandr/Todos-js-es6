@@ -87,7 +87,7 @@ function render() {
                 render()
             })
            
-            item.appendChild(checkbox);
+            item.appendChild(checkbox); 
             item.appendChild(text);
             item.appendChild(button);
             todo.appendChild(item);
