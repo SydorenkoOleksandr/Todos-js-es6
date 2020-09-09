@@ -1,19 +1,3 @@
-// const person = {
-//     name: 'Alex',
-//     age: '28',
-//     'double name': 'name', 
-//     greet (){console.log('Greet')},
-
-// }
-
-
-// Object.prototype.sayHello = () =>{
-//     console.log('Hello')
-// }
-
-// const lena = Object.create(person)
-
-// lena.name = 'Elena'
 
 
 
@@ -21,11 +5,10 @@
 
 const form = document.getElementById("form");
 const input = document.getElementById("input");
-// const button = document.getElementById("button");
 const todo = document.getElementById("todo");
-// if()
 let todoList = [];
 render()
+
 //event to add todos
 form.addEventListener("submit", (e) => {
     e.preventDefault();
@@ -44,11 +27,6 @@ function addTodo() {
         localStorage.setItem("todos", JSON.stringify(todoList));
     render()
 }
-
-
-
-
-
 
 
 function render() {
